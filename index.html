@@ -1,0 +1,2720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film sitesi</title>
+    <link rel="shortcut icon" href="./assets/favicon.jpeg" />
+    <!-- Slick slider movies Jquery  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick slider movies Jquery  end -->
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Ajax library for typing word replics container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- for icons font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Bootstrap icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- loader start -->
+    <div class="loader"></div>
+    <!-- loader end -->
+
+    <!-- main beginning container -->
+    <div class="container" id="top">
+      <!--! navbar start -->
+      <div class="navbar">
+        <div class="navbar-wrapper">
+          <div class="logo-wrapper">
+            <a href="#top"><img src="./assets/img/jokerlogo.jpg" alt="" /></a>
+          </div>
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li class="menu-list-item active">
+                <a id="home" href="#top">Ana sayfa</a>
+              </li>
+
+              <li class="menu-list-item">
+                <a id="films" href="#beginningmovies">Yerli</a>
+              </li>
+
+              <li class="menu-list-item">
+                <a id="foreign" href="#foreignmovies">Yabancı</a>
+              </li>
+
+              <li class="menu-list-item">
+                <a id="fear" href="#fearmovies">Korku</a>
+              </li>
+              <li class="menu-list-item">
+                <a id="comedy" href="#comedymovies">Komedi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="profil-container">
+            <a href="https://github.com/bayramov66">
+              <img
+                class="profile-picture"
+                src="./assets/img/WhatsApp Image 2023-12-17 at 23.05.14_9b2d21d0.jpg"
+            /></a>
+
+            <div class="profile-text-container">
+              <span class="profile-text">Hesabim</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+            <div class="toggle">
+              <i class="bi bi-moon-fill toggle-icon"></i>
+              <i class="bi bi-brightness-high-fill toggle-icon"></i>
+              <div class="toggle-ball"></div>
+            </div>
+
+            <div class="burger-icon">
+              <i class="bi bi-list" id="burger-menu"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! navbar end -->
+
+      <!--! sidebar start -->
+      <div class="sidebar">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-bell-slash"></i>
+        <i class="fa-solid fa-film"></i>
+        <i class="fas fa-glasses"></i>
+        <i class="fas fa-video-slash"></i>
+      </div>
+      <!--! sidebar end -->
+
+      <!--!Hero container start(main)  -->
+      <div class="hero-container">
+        <!--! content featured start -->
+        <div class="content-wrapper">
+          <div class="featured-content">
+            <img
+              class="featured-title"
+              src="./assets/img/spiderman-title.png"
+              alt=""
+            />
+            <p class="featured-desc">
+              Değerli izleyiciler film siteme hoşgelginiz!Hepinize selamlar ve
+              sevgiler! Sinemalardaki en popüler filmleri türkçe izleye
+              bilirsiniz.Her tür için 17 tane film mevcuttur.Filmler tamamen
+              adminin seyir zevkine göre seçilmiştir.Umarım siz de
+              beğenirsiniz.Adminle iletişim için sitenin en aşağısında bilgiler
+              mevcuttur.İyi seyirler dileriz
+              <i class="fa-regular fa-face-smile"></i>
+            </p>
+
+            <div class="featured-items">
+              <button class="play-btn">
+                <input type="radio" name="demo" id="video_input" />
+                <label for="video_input">
+                  <h1 class="icon"><i class="fa-solid fa-play"></i></h1>
+                </label>
+
+                <div class="video_modal">
+                  <input type="radio" id="close" name="demo" />
+                  <label for="close" id="close">&times;</label>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/_yhFofFZGcc?si=_wkowNKDzQVVs2JH"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                Oynat
+              </button>
+
+              <div class="info-project">
+                <h1>İyi seyirler</h1>
+                <i class="fa-solid fa-file-video"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--! content featured end -->
+
+        <!-- filter start -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="movie-list-filter"
+        >
+          <select>
+            <option>Yerli Sinema</option>
+            <option>Yabanci(en iyiler)</option>
+            <option>Korku</option>
+            <option>Komedi</option>
+          </select>
+        </div>
+        <!-- filter end -->
+
+        <!-- movies section start -->
+
+        <!-- movie container 1  Yerli Sinema -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="movie-list-container"
+          id="beginningmovies"
+        >
+          <h1 class="movie-list-title">Yerli sinema</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=pPWaG-lFg1U&t=875s"
+                  target="_blank"
+                  ><img
+                    class="movie-item-img"
+                    src="./assets/img/Kolpacino.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kolpaçino 3</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB: 8.7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 35,653</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=bFeRK4EUeTk"
+                  target="_blank"
+                >
+                  <img class="movie-item-img" src="./assets/img/f2.jpg" alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kaybedenler Kulübü</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 22,843</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=PeiDvaGpTB4&t=200s"
+                  target="_blank"
+                >
+                  <img class="movie-item-img" src="./assets/img/f5.jpg" alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">ıssız adam</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 32,245</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=-ZbxBaZJOTM"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/kelebeginruyasi.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kelebeğin Rüyası</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :6.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">28,166</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=0ZWFNiAFW18"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/yedinci-kogustaki-mucize-sinema-film_omwt.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">7. Koğuştakı Mucize</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 33,357</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://kultfilmler.com/g-o-r-a-gora-izle/"
+                  target="_blank"
+                >
+                  <img class="movie-item-img" src="./assets/img/f3.jpg" alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">G.O.R.A</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 14,195</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=6bd7QDOvBPI&list=PLQlSoX9m-sHav9PxYOgnzw1cotEGoQyI9"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/Əqrəb_mövsümü.png"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Əqrəb Mövsümü</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.9</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 27,181</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+             <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=SJY-gdDNSdo&t=1s"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/ikimizinyerine.png"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">İkimizin Yerine</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :6.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">33,911</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=9q_VkhnCgss"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/herseycokguzelolacak.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Her şey çok güzel olacak</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :6.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">36,118</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=CxwJBJyVzhU"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/bu derin bir tutku.png"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Bu derin bir tutku</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 28,865</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=jdKyYweQFSo"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/Av_Mevsimi.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Av Mevsimi</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 28,235</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=7c3WQ8gF0QI&t=16s"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/sadecesen.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Sadece Sen</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :7.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">46,927</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=6RW4rhNAQAI"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/romantikomedi.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Romantik Komedi</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">45,016</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.facebook.com/watch/?v=3431646533599235"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/Kabadayı.jpeg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kabadayı</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :5.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">29,742</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=Ez61IM-F9BQ"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/yolarkadasim.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Yol Arkadaşım</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 25,083</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/fig-jam/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/incirreceli.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">İncir reçeli</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :6.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">37,116</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+               <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=2l-flx3aaqs"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/eskiya.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Eşkiya</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 37,265</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- movie container 2  Top best movies-->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="movie-list-container"
+          id="foreignmovies"
+        >
+          <h1 class="movie-list-title">Yabancı (en iyiler)</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/batman-kara-sovalye-hd-film-izle-hdf-hdf-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/darknight2008.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Dark Night (2008)</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 71,109</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/hd-the-godfather-izle-7/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/godf.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Godfather</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 9.4</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 83,432</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-avatar-hd-film-izle-56/ "
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/avatar-2-the-way-of-water.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Avatar</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 9</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 78,174</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/hd-sevginin-gucu-izle-hdf-4/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/leon.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">LEON(1994)</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 45,063</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/umudunu-kaybetme-izle-hdf-6/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/pursuithappiness.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Pursuit Happiness</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 39,254</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=TFi-R31cBnU"
+                  target="_blank"
+                >
+                  <img class="movie-item-img" src="./assets/img/tw.jpg" alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Twilight</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 42,237</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+           <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-yildizlar-arasinda-film-izle-hdf-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/interstellar.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Interstellar</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 64,850</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/rocky-izle-hdf-hdf-4/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/rocky.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Rocky</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 44,850</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+             <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/ben-efsaneyim-hd-film-hd-izle-hdf-6/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/iamlegend.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">I am Legend</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 37,8165</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/scarface-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/scrfacetony.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Scarface</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 82,016</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/gladyator-izle-hd-hdf-hdf-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/gladiator.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Gladiator</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 74,850</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-esaretin-bedeli-film-izle-hdf-hdf-44/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/shawhank.jpeg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Shawshank of Redemption</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 9.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 84,150</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-apokalipto-izle-6/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/apocalypto-ban2.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Apocalypto</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :8.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">76,927</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/rambo-ilk-kan-2-izle-hdf-6/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/rambo-main-123345.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Rambo</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :7.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">56,109</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://dizimia4.com/film/revenge/turkce-dublaj-izle-1"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/revenge.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Revenge (1990)</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :8.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">65,226</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/good-will-hunting/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/goodwillhunting.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Good Will Hunting</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">55,895</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-fury-2014-izle-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src=".//assets/img/fury-IN.jpg"
+                    alt=""
+                /></a>
+
+                <div class="movie-item-info">
+                  <span class="movie-item-title">FURY</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB :7.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye">64,914</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <!-- movie container 3 Korku filmleri -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="movie-list-container"
+          id="fearmovies"
+        >
+          <h1 class="movie-list-title">Korku,Gerilim</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-the-gangster-the-cop-the-devil-hd-film-izle-hdf-6/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/gangster.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Ganster(2019)</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 50,917</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/lanet-izle-hd-10/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/sninster.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Sınıster</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 56,326</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-nefesini-tut-izle-7/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/dont breathe.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Don't breathe</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 63,097</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/kabus-gecesi-2-izle-hdf-hdf-4/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/jeepers creepers.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Jeepers Creepers 2</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 39,298</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/prisoners-hd-hdf3-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/prisoners.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Prisoners</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 28,871</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/hd-koleksiyoncu-izle-9/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/kolleksiyoner.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Collector</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 31,593</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/1-the-colony-5/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/colony.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Colony</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 26,150</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://izlemag.com/dizi/the-walking-dead-origins/1-sezon-1-bolum"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/walking dead.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Walking Dead</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 37,051</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://filmekseni.net/beyond-the-woods/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/beyond woods.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Beyond the Woods</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 27,357</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/ssddtraintobusonfilmini-1080p-hd-izle-hdf-hdf-4/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/TrainToBusanFeatured2a-(1).jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Train to Busan</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 61,448</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a href="https://hdfilmcehennemi.cx/13-cuma-2/" target="_blank">
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/friday-the-13th.jpeg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Friday the 13th</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 39,184</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://hdfilmcehennemi.cx/seytani-gordum/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/SawDevil.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">I saw the Devil</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 42,184</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/the-silence-of-the-lambs-3/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/silenceoflambs.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Silence of the lambs</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 61,181</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.canlidizi6.com/ejder-kapani-film-izle.html"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/ejder kapanı.png"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Ejder Kapanı</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 45,198</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/the-chaser-1/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/thechaser.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Chaser(2008)</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 51,201</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=ro5-bf643aM"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/breed.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Breed</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 20,547</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/tepenin-gozleri-film-izle-7/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/hillhaveEyes.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Hill Have Eyes</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 33,016</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- movie container 4 Komedi filmleri -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="movie-list-container"
+          id="comedymovies"
+        >
+          <h1 class="movie-list-title">Komedi</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/recep-ivedik-2/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/recep-ivedik-2.jpeg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Recep Ivedik 2</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 69,451</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=kmEODj58u-4&t=1s"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/cakallardans.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Çakallarla Dans</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 48,819</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/no-hard-feelings/"
+                  target="_blank"
+                >
+                  <img class="movie-item-img" src="./assets/img/nhf.jpg" alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">No Hard Feelings</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 23,298</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=gFxLMfitbBs"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/kutsaldamacana.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kutsal Damacana</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 36,170</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=jUEDKFgFwCk&list=PLGq8JCkcsJKAKUYDh0uuYGuA2SxO3hQfT&index=4"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/turklercildirmisolmali.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Türkler çıldırmış olmalı</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 16,465</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=zVmYLV1aX7Y"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/hababam.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Hababam Sınıfı Merhaba</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 31,850</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=3KRL9DqDn38&t=2s"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/hepyek.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Hep Yek</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 31,226</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=h_iNdnOvNsw"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/zamanmakinesi1973.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Zaman Makinesi 1973</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 23,782</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=nzcRVGMiXBE"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/maskelibesler.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Maskeli Beşler</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.6</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 43,182</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://hdfilmcehennemi.cx/celal-ile-ceren/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/celalileceren.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Celal ile Ceren</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.8</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 36,852</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=rr9CypETzEs"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/kara-bela-filmi.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Karabela</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 66,163</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://hdfilmcehennemi.cx/senden-baska/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/anyonebutyou.jpeg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Anyone but You</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 41,263</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=NKDLXn86FAQ"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/GDOKarakedi.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">G.D.O. Karakedi</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 6.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 37,216</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=r6EkVpgk1aU"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/kirpi.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kirpi</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 22,169</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.canlidizi6.com/organize-isler-film-izle.html"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/organizeisler.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Organize işler</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 7.5</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 45,803</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.youtube.com/watch?v=rKDRiprpVYY"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/hayaletdayi.jpeg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Hayalet dayı</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 5.3</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 15,183</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <a
+                  href="https://www.hdfilmcehennemi.us/ketenpere/"
+                  target="_blank"
+                >
+                  <img
+                    class="movie-item-img"
+                    src="./assets/img/ketenpere.jpg"
+                    alt=""
+                /></a>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Ketenpere</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-download"></i>
+
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                  <div class="movie-item-bottom-info">
+                    <div class="item-imdb-rating">
+                      <h3>IMDB : 8.2</h3>
+                    </div>
+                    <div class="item-view-count">
+                      <i class="bi bi-eye"> 47,031</i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- movie end -->
+
+        <!-- replic-item container start -->
+        <section
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="replics-container"
+        >
+          <div class="replics-container-title">
+            <h1 class="repl-cont-title-item"><span class="typing"></span></h1>
+          </div>
+          <div class="replic-6-item-wrapper">
+            <div class="replic-item">
+              <div class="replic-image">
+                <img src="./assets/quotes img/godfather.jpg" alt="" />
+              </div>
+              <div class="replic-text">
+                <q>Ona redd edemeyeği bir teklif yapacağım!</q>
+                <h3 class="replic_movie_name">The Godfather - 1972</h3>
+              </div>
+            </div>
+
+            <div class="replic-item">
+              <div class="replic-image">
+                <img src="./assets/quotes img/Joker-dark-night.png" alt="" />
+              </div>
+              <div class="replic-text">
+                <q
+                  >Her şey plana göre gitdiğinde kimse paniklemez, plan berbat
+                  olsa bile.</q
+                >
+                <h3 class="replic_movie_name">The Dark Night - 2008</h3>
+              </div>
+            </div>
+            <div class="replic-item">
+              <div class="replic-image">
+                <img src="./assets/quotes img/leon1994.png" alt="" />
+              </div>
+              <div class="replic-text">
+                <q
+                  >İntikam iyi bir şey değil, Mathilda. İnan bana, unutmak daha
+                  iyi.</q
+                >
+
+                <h3 class="replic_movie_name">Leon The Professional - 1994</h3>
+              </div>
+            </div>
+            <div class="replic-item">
+              <div class="replic-image">
+                <img src="./assets/quotes img/rockybalboa.jpg" alt="" />
+              </div>
+              <div class="replic-text">
+                <q class="replic_name"
+                  >Hiç kimse hayat kadar sert darbe vuramaz.Ama mesele ne kadar
+                  sert vurduğun değil, o darbelere rağmen devam ede bilmen.</q
+                >
+                <h3 class="replic_movie_name">Rocky - 1976</h3>
+              </div>
+            </div>
+
+            <div class="replic-item">
+              <div class="replic-image">
+                <img
+                  src="./assets/quotes img/The-Pursuit-Of-Happyness.png"
+                  alt=""
+                />
+              </div>
+              <div class="replic-text">
+                <q
+                  >Bir hayalin varsa onu korumalısın. İnsanlar kendi
+                  yapamadıkları şeyleri senin de yapamayacağını söylemek
+                  ister.Eğer bir şey istiyorsan, onu elde etmelisin.</q
+                >
+                <h3 class="replic_movie_name">Pursuit of Happyness - 2006</h3>
+              </div>
+            </div>
+            <div class="replic-item">
+              <div class="replic-image">
+                <img
+                  src="./assets/quotes img/The-Shawshank-Redemption-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="replic-text">
+                <q
+                  >Unutma Red, umut iyi bir şeydir, belki de en iyi şeydir ve
+                  hiçbir iyi şey asla ölmez.</q
+                >
+                <h3 class="replic_movie_name">
+                  The Shawshank Redemption - 1994
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- musics section -->
+        <section
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="Musics"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="musics-title-wrapper">
+            <h1 class="music-wrapper-heading">
+              <i class="fa-solid fa-music" style="font-size: 30px"></i>En iyi
+              film müzikleri
+              <i class="fa-solid fa-music" style="font-size: 30px"></i>
+            </h1>
+          </div>
+          <div class="music-wrapper">
+            <div class="musics_item">
+              <div class="music_left_side">
+                <div class="music_left_side_items">
+                  <div class="music_left_side_item1">
+                    <img
+                      src="./assets/music albom images/musicwallpaper1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="music_left_side_item2">
+                    <img src="./assets/img/film.png" alt="" />
+                  </div>
+                  <div class="music_left_side_item3">
+                    <img
+                      src="./assets/music albom images/girlmsuic.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="music_right_side">
+                <div class="player">
+                  <div class="imgbox">
+                    <img
+                      src="./assets/music albom images/musicalbom1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <audio
+                    src="./musics/Godfather-Baba-Original-Theme-Song.mp3"
+                    controls
+                    type="audio/mp3"
+                  ></audio>
+                </div>
+                <div class="player">
+                  <div class="imgbox">
+                    <img
+                      src="./assets/music albom images/sting-leon.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <audio
+                    src="./musics/sting_-_shape-of-my-heart.mp3"
+                    controls
+                    type="audio/mp3"
+                  ></audio>
+                </div>
+                <div class="player">
+                  <div class="imgbox">
+                    <img
+                      src="./assets/music albom images/rocky-mickey.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <audio
+                    src="./musics/rocky-soundtrack-mickey.mp3"
+                    controls
+                    type="audio/mp3"
+                  ></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Users section -->
+        <section data-aos="fade-up" data-aos-duration="3000" class="Users">
+          <div class="Users-wrapper-heading">
+            <h1 class="user-heading">Our Users</h1>
+          </div>
+          <div class="swiper custom__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser1.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Ceyda Kasap</h3>
+                  <p class="swipper-user-content">
+                    "Uzun zamandır böyle bir film sitesi arıyordum teşekkürler"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser2.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Kamran Bayramov</h3>
+                  <p class="swipper-user-content">
+                    "Film saytımı ziyarət etdiyiniz üçün təşəkkür edirəm"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser3.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Aysel Əlizadə</h3>
+                  <p class="swipper-user-content">
+                    "Vizual olaraq çox rahat saytdı"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser4.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Elcan Qurbanlı</h3>
+                  <p class="swipper-user-content">
+                    "Bütün janrlarda ən top filmlər var"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser6.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Fulya Sarıoglu</h3>
+                  <p class="swipper-user-content">
+                    "Emeginize saglık on numara"
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser5.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Samet Öztürk</h3>
+                  <p class="swipper-user-content">
+                    "Özellikle korku filmleri seçimi efsane"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser7.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Chen Nakata</h3>
+                  <p class="swipper-user-content">
+                    "There are range of interesting films"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser8.jpg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Tom Bradley</h3>
+                  <p class="swipper-user-content">
+                    "Wow, it's wonderful i find foreign films"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper-img">
+                  <img src="./assets/users-img/randomuser9.jpeg" alt="" />
+                </div>
+                <div class="swipper-info">
+                  <h3 class="swipper-user-name">Mustafa Kayhan</h3>
+                  <p class="swipper-user-content">
+                    "Admine çok teşekkür ederim her kolaylığı sağlamış"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!--navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer data-aos="fade-up" data-aos-duration="3000" class="footer">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="social-icon">
+            <li class="social-icon__item">
+              <a
+                class="social-icon__link"
+                href="https://www.facebook.com/kamran.bayramov.bayramov13/"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="social-icon__item">
+              <a
+                class="social-icon__link"
+                href="https://github.com/bayramov66"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-icon__item">
+              <a
+                class="social-icon__link"
+                href="https://www.linkedin.com/in/kamran-bayramov-960355221/"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-icon__item">
+              <a
+                class="social-icon__link"
+                href="https://www.instagram.com/bayram.k66/"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu">
+            <marquee behavior="scroll" direction="left" scrollamount="7">
+              <h2 class="messageTurkish">Ziyaretiniz için teşekkürler</h2>
+              <h2 class="messageEnglish">Thanks for visiting</h2>
+            </marquee>
+          </ul>
+          <p>&copy;2024 Kamran Bayramov | All Rights Reserved</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- aos start -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- aos end -->
+
+    <!-- footer scripts start -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- footer scripts end -->
+
+    <!-- slick slider jquery start -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick slider jquery end -->
+
+    <!-- users swiper bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- slick slider script for movies  -->
+    <script>
+      $(document).ready(function () {
+        $(".movie-list").slick({
+          infinite: false,
+          slidesToShow: 4,
+          speed: 400,
+          slidesToScroll: 1,
+
+          responsive: [
+            {
+              breakpoint: 1450,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script type="text/javascript"></script>
+
+    <!-- users section swiper -->
+    <script>
+      var swiper = new Swiper(".custom__slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        slidesPerView: 3,
+        spaceBetween: 40,
+        loop: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- users swipper end -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
