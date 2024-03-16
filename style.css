@@ -52,7 +52,7 @@ body {
   border: 15px solid #dddddd;
   border-top-color: #7449f5;
   border-radius: 50%;
-  animation: loading 4s ease infinite;
+  animation: loading 1.5s ease infinite;
 }
 @keyframes loading {
   from {
@@ -1367,11 +1367,16 @@ marquee h2 {
     font-size: 15px;
   }
   .user-heading {
-    transform: translateX(50px);
+    transform: translateX(70px);
     text-align: center;
   }
+  .swiper-pagination {
+    padding-right: 0;
+    padding-left: 0;
+    transform: translateX(20px);
+  }
   .swiper.custom__slider {
-    height: 300px;
+    height: 280px;
     margin-top: 40px;
   }
 
