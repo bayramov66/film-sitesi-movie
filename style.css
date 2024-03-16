@@ -52,7 +52,7 @@ body {
   border: 15px solid #dddddd;
   border-top-color: #7449f5;
   border-radius: 50%;
-  animation: loading 2s ease infinite;
+  animation: loading 4s ease infinite;
 }
 @keyframes loading {
   from {
