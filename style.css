@@ -15,7 +15,7 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #946fd6;
+  background-color: red;
 }
 
 .container {
@@ -1324,10 +1324,29 @@ marquee h2 {
   #beginningmovies {
     margin-top: 100px;
   }
+
   .profil-container {
     column-gap: 7px;
   }
-
+  .toggle {
+    margin-left: 7px;
+  }
+  .burger-icon {
+    margin-left: 7px;
+  }
+  .toggle {
+    margin-left: 7px;
+  }
+  .movie-item-bottom-info {
+    column-gap: 65px;
+  }
+.logo-wrapper{
+  margin-left: 30px;
+}
+.navbar-wrapper{
+  justify-content: space-evenly;
+  padding: 0;
+}
   .movie-item-img {
     width: 237px;
     height: 250px;
