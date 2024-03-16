@@ -4,7 +4,6 @@ icons.forEach(function (icon) {
   icon.addEventListener("click", function () {
     var message = "";
 
-    
     if (icon.classList.contains("bi-hand-thumbs-up-fill")) {
       message = "Movie liked +1";
     } else if (icon.classList.contains("bi-hand-thumbs-down-fill")) {
